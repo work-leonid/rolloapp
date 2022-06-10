@@ -2,7 +2,54 @@
 layout: default
 ---
 
-<div class="grid grid-cols-3 gap-10 mb-20">
+<script>
+  function startConfetti() {
+ var count = 400;
+var defaults = {
+  origin: { y: 0.4 }
+};
+
+function fire(particleRatio, opts) {
+  confetti(Object.assign({}, defaults, opts, {
+    particleCount: Math.floor(count * particleRatio)
+  }));
+}
+
+fire(0.25, {
+  spread: 26,
+  startVelocity: 55,
+});
+fire(0.2, {
+  spread: 60,
+});
+fire(0.35, {
+  spread: 100,
+  decay: 0.91,
+  scalar: 0.8
+});
+fire(0.1, {
+  spread: 120,
+  startVelocity: 25,
+  decay: 0.92,
+  scalar: 1.2
+});
+fire(0.1, {
+  spread: 220,
+  startVelocity: 25,
+  decay: 0.92,
+  scalar: 1.2
+});
+fire(0.1, {
+  spread: 120,
+  startVelocity: 45,
+});   
+  }
+
+  document.onload = startConfetti({
+    })
+</script>
+
+<div  class="grid grid-cols-3 gap-10 mb-20">
   <img src="https://static.wixstatic.com/media/58b691_7de0fe384ec64e7286390686f88749c2~mv2.png/v1/fill/w_314,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo_edited.png" class="w-40 mb-20"/>
 
   <div class="max-w-3xl col-start-2 col-span-2">
