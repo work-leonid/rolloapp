@@ -1,19 +1,20 @@
-<div class="bg-slate-900 group break-inside-avoid overflow-hidden rounded-2xl">
+<div class="bg-slate-900 whaaaat group break-inside-avoid mt-16 overflow-hidden rounded-2xl">
 
-  <div class="relative overflow-hidden">
-    <img src="<%= @img %>" class="h-74 group-hover:scale-110 group-hovertransition-all duration-300 bg-slate-900 w-full object-cover" />
+  <div class="relative overflow-hidden isolate">
+    <img src="<%= @img %>" class="h-74 group-hover:scale-110 transition-all duration-300 bg-slate-900 w-full object-cover -z-10" />
     <div class="h-44 bg-gradient-to-t inset-x-0 from-slate-900 w-full absolute bottom-0"></div>
     <h2 class="text-4xl text-white font-custom absolute bottom-4 left-8"><%= @title %></h2>
   </div>
 
-  <div class="p-8">
+  <div class="p-8 ">
     <ul class="flex gap-3 flex-wrap">
 
       <% @arr.split(", ").each do |item| %>
 
-        <li class="flex gap-3 hover:text-purple-500 px-4 py-3 hover:bg-purple-100 text-slate-50 bg-slate-700 rounded-lg items-center">
-          <input id="music" type="checkbox" class="appearance-none h-6 w-6 border-2 border-purple-400 rounded-md" />
-          <label for="music">
+        <li class="flex gap-3 hover:text-purple-500 px-4 py-3 hover:bg-purple-200 text-slate-50 bg-slate-700/50 rounded-lg items-center">
+          <% rand = rand() %>
+          <input id="<%= rand %>" type="checkbox" class="appearance-none form-check-input align-top bg-no-repeat bg-center bg-contain float-left h-6 w-6 checked:bg-purple-500 border-2 border-purple-400 rounded-md" />
+          <label for="<% rand %>">
             <%= item %>
           </label>
         </li>

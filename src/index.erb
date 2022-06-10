@@ -2,39 +2,40 @@
 layout: default
 ---
 
-<div class="grid grid-cols-3 gap-10 mb-40">
+<div class="grid grid-cols-3 gap-10 mb-20">
   <img src="https://static.wixstatic.com/media/58b691_7de0fe384ec64e7286390686f88749c2~mv2.png/v1/fill/w_314,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo_edited.png" class="w-40 mb-20"/>
 
   <div class="max-w-3xl col-start-2 col-span-2">
-    <h1 class="mb-5 text-5xl text-rose-500 font-custom font-bold">
-      Привет! Давайте знакомиться! 
-    </h1>
-    <p class="opacity-80">Расскажите о своих предпочтениях, а мы поможем вам найти правильные события. Чем больше будет предпочтений, тем точнее будет наш поиск. </p>
+    <h1 class="mb-5 text-5xl text-rose-500 font-custom font-bold">Hi! Let's get to know each other</h1>
+    <p class="opacity-80">Tell us your favorite events, and we'll help you find the right ones. The more likes you have, the more accurate our search will be.</p>
   </div>
 </div>
 
-<a href="#" class="fixed z-50 bottom-20 right-20 px-16 hover:bg-purple-600 py-6 rounded-2xl bg-purple-500 text-white">Дальше</a>
+<a href="events" class="fixed z-50 bottom-20 right-16 px-10 hover:bg-rose-600 py-6 rounded-2xl bg-rose-500 text-white font-medium font-custom flex gap-10 group duration-300 transition-all hover:translate-x-4">
+  Show me what you have 
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:translate-x-4 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /> </svg>
+</a>
 
-<div class="columns-3 gap-16 space-y-16">
+<div class="columns-3 gap-16">
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGxlYXJuaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Обучение", arr: "Лекции, Семинары, Книжные ярмарки") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGxlYXJuaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Education", arr: "Lectures, Workshops, Book Fairs") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", title: "Музыка", arr: "Джаз, Техно, Диско, Живая музыка, Косплей, Хаус, Хип-хоп, DJ-сет") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", title: "Music", arr: "Jazz, Techno, Disco, Live Music, Cosplay, House, Hip-Hop, DJ set") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1617646339087-654bc92e57c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHNwb3J0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Спорт", arr: "Волейбол, Хоккей, Автомобильные гонки, Под открытым небом, В помещении, Футбол") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1617646339087-654bc92e57c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHNwb3J0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Sport", arr: "Volleyball, Hockey, Car racing, Outdoor, Indoor, Football") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1594913495702-0872744c6968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGdhbWVzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Игры", arr: "Квесты, Страйкбол, Догонялки") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1594913495702-0872744c6968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGdhbWVzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Family Games", arr: "Quests, Strikeball, Catch-up") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", title: "Рестораны", arr: "Русская кухня, Азиатская кухня, Франция, Американская кухня") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", title: "Restaurants", arr: "Asian cuisine, French cuisine, American cuisine, Festivals") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1578985824626-945a6f546304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsbGVyeXxlbnwwfDB8MHx8&auto=format&fit=crop&w=900&q=60", title: "Выставки", arr: "Художественные галереи, Книжные выставки, Современное искусство") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1578985824626-945a6f546304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsbGVyeXxlbnwwfDB8MHx8&auto=format&fit=crop&w=900&q=60", title: "Exhibitions", arr: "Art Galleries, Book Exhibitions, Contemporary Art") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFydHl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", title: "Вечеринки", arr: "Клубы, Рейвы") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFydHl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", title: "Parties", arr: "Clubs, Raves") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1608170825938-a8ea0305d46c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2luZW1hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Кино", arr: "Комедии, Мелодрамы, Боевики, Авторское кино, Старые фильмы") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1608170825938-a8ea0305d46c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2luZW1hfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Cinema", arr: "Comedies, Melodramas, Action Movies, Author's Films, Old Movies") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1616036902568-fa623d8f0c0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHRvdXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", title: "Экскурсии", arr: "По городу, На природу, Музеи, Предприятия") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1616036902568-fa623d8f0c0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHRvdXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60", title: "Guided Tours", arr: "Around the city, Outdoors, Museums") %>
 
-  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29uY2VydHxlbnwwfDB8MHx8&auto=format&fit=crop&w=900&q=60", title: "Концерты", arr: "Поп, Рок, Джаз, Народная музыка, Классика") %>
+  <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29uY2VydHxlbnwwfDB8MHx8&auto=format&fit=crop&w=900&q=60", title: "Concerts", arr: "Pop, Rock, Jazz, Folk Music, Classical") %>
 
 </div>
