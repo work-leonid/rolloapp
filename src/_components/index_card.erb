@@ -1,0 +1,26 @@
+<div class="bg-slate-900 group break-inside-avoid overflow-hidden rounded-2xl">
+
+  <div class="relative overflow-hidden">
+    <img src="<%= @img %>" class="h-74 group-hover:scale-110 group-hovertransition-all duration-300 bg-slate-900 w-full object-cover" />
+    <div class="h-44 bg-gradient-to-t inset-x-0 from-slate-900 w-full absolute bottom-0"></div>
+    <h2 class="text-4xl text-white font-custom absolute bottom-4 left-8"><%= @title %></h2>
+  </div>
+
+  <div class="p-8">
+    <ul class="flex gap-3 flex-wrap">
+
+      <% @arr.split(", ").each do |item| %>
+
+        <li class="flex gap-3 hover:text-purple-500 px-4 py-3 hover:bg-purple-100 text-slate-50 bg-slate-700 rounded-lg items-center">
+          <input id="music" type="checkbox" class="appearance-none h-6 w-6 border-2 border-purple-400 rounded-md" />
+          <label for="music">
+            <%= item %>
+          </label>
+        </li>
+
+      <% end %>
+
+    </ul>
+  </div>
+
+</div>
