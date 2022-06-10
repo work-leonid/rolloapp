@@ -2,21 +2,21 @@
 layout: default
 ---
 
-<div class="grid grid-cols-3 gap-10 mb-20">
-  <img src="https://static.wixstatic.com/media/58b691_7de0fe384ec64e7286390686f88749c2~mv2.png/v1/fill/w_314,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo_edited.png" class="w-40 mb-20"/>
+<div class="grid md:grid-cols-3 gap-10 mb-20">
+  <img src="https://static.wixstatic.com/media/58b691_7de0fe384ec64e7286390686f88749c2~mv2.png/v1/fill/w_314,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo_edited.png" class="w-40 md:mb-20"/>
 
-  <div class="max-w-3xl col-start-2 col-span-2">
+  <div class="max-w-3xl md:col-start-2 md:col-span-2">
     <h1 class="mb-5 text-5xl text-rose-500 font-custom font-bold">Hi! Let's get to know each other</h1>
     <p class="opacity-80">Tell us your favorite events, and we'll help you find the right ones. The more likes you have, the more accurate our search will be.</p>
   </div>
 </div>
 
-<a href="events"  class="fixed z-50 bottom-20 right-16 px-10 hover:bg-rose-600 py-6 rounded-2xl bg-rose-500 text-white font-medium font-custom flex gap-10 group duration-300 transition-all hover:translate-x-4">
+<a href="events"  class="fixed z-50  bottom-5 left-5 right-5 md:left-auto md:bottom-20 md:right-16 px-10 hover:bg-rose-600 py-6 rounded-2xl bg-rose-500 text-white font-medium font-custom flex gap-10 group duration-300 transition-all md:hover:translate-x-4 items-center justify-center">
   Show me what you have 
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:translate-x-4 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /> </svg>
 </a>
 
-<div class="columns-3 gap-16">
+<div class="md:columns-2 xl:columns-3 gap-16">
 
   <%= render IndexCard.new(img: "https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGxlYXJuaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60", title: "Education", arr: "Lectures, Workshops, Book Fairs") %>
 
