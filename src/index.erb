@@ -2,9 +2,18 @@
 layout: default
 ---
 
-<div class="grid md:grid-cols-3 gap-10 mb-20">
-  <img src="https://static.wixstatic.com/media/58b691_7de0fe384ec64e7286390686f88749c2~mv2.png/v1/fill/w_314,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo_edited.png" class="w-40 md:mb-20"/>
+<nav class="flex justify-between items-center mb-20">
+  <a href="/">
+    <img src="https://static.wixstatic.com/media/58b691_7de0fe384ec64e7286390686f88749c2~mv2.png/v1/fill/w_314,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo_edited.png" class="w-24 sm:w-40"/>
+  </a>
 
+  <div class="flex gap-5">
+    <a href="login" class="text-purple-600 hover:opacity-70">Login</a>
+    <a href="signup" class="text-purple-600 hover:opacity-70">Registration</a>
+  </div>
+</nav>
+
+<div class="grid md:grid-cols-3 gap-10 mb-20">
   <div class="max-w-3xl md:col-start-2 md:col-span-2">
     <h1 class="mb-5 text-5xl text-rose-500 font-custom font-bold">Hi! Let's get to know each other</h1>
     <p class="opacity-80">Tell us your favorite events, and we'll help you find the right ones. The more likes you have, the more accurate our search will be.</p>
